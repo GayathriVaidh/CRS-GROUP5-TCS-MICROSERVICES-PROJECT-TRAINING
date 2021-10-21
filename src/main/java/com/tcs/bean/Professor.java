@@ -3,48 +3,73 @@
  */
 package com.tcs.bean;
 
-/**
- * @author VENKY_HARI
- *
- */
 public class Professor {
-	public String profName;
-	public String branch;
-	public int profRegId;
-	/**
-	 * @return the profName
-	 */
-	public String getProfName() {
-		return profName;
+	private String ProfessorName;
+	private int ProfessorId;
+	private String ProfessorDept;
+	private String role;
+	public Professor(int int1, String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
 	}
 	/**
-	 * @param profName the profName to set
+	 * @return the professorName
 	 */
-	public void setProfName(String profName) {
-		this.profName = profName;
+	public String getProfessorName() {
+		return ProfessorName;
 	}
 	/**
-	 * @return the branch
+	 * @param professorName the professorName to set
 	 */
-	public String getBranch() {
-		return branch;
+	public void setProfessorName(String professorName) {
+		ProfessorName = professorName;
 	}
 	/**
-	 * @param branch the branch to set
+	 * @return the professorId
 	 */
-	public void setBranch(String branch) {
-		this.branch = branch;
+	public int getProfessorId() {
+		return ProfessorId;
 	}
 	/**
-	 * @return the profRegId
+	 * @param professorId the professorId to set
 	 */
-	public int getProfRegId() {
-		return profRegId;
+	public void setProfessorId(int professorId) {
+		ProfessorId = professorId;
 	}
 	/**
-	 * @param profRegId the profRegId to set
+	 * @return the professorDept
 	 */
-	public void setProfRegId(int profRegId) {
-		this.profRegId = profRegId;
+	public String getProfessorDept() {
+		return ProfessorDept;
 	}
+	/**
+	 * @param professorDept the professorDept to set
+	 */
+	public void setProfessorDept(String professorDept) {
+		ProfessorDept = professorDept;
+	}
+	/**
+	 * @return the role
+	 */
+	public String getRole() {
+		return role;
+	}
+	/**
+	 * @param role the role to set
+	 */
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public static Professor insert(Professor professor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public static Professor delete(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Professor update(int id, Professor professors) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 }

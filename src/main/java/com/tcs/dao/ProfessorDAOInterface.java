@@ -2,16 +2,27 @@
  * 
  */
 package com.tcs.dao;
+import java.util.List;
 
+import java.sql.SQLException;
 import com.tcs.bean.Professor;
 
 /**
- * @author VENKY_HARI
+ * @author Gayathri
  *
  */
 public interface ProfessorDAOInterface {
-	public Professor registeredCourses();
-	public Professor viewStudentInfo();
-	public Professor assignGrades();
-	
+	public List list() throws SQLException;
+	public Professor getId(int id) throws SQLException; 
+//	public Student create(Student student);
+	public Professor delete(int id) throws SQLException;
+//	public Student update(int id, Student student);
+	public Professor insert(Professor professor) throws SQLException;
+	/**
+	 * @return the students
+	 * @throws SQLException 
+	 */
+	public Professor update(int id, Professor professor) throws SQLException;
 }
+
+
